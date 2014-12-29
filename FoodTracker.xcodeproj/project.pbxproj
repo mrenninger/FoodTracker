@@ -14,6 +14,11 @@
 		2DF8072A1A4A1EFD00EE7C86 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DF807291A4A1EFD00EE7C86 /* Images.xcassets */; };
 		2DF8072D1A4A1EFD00EE7C86 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2DF8072B1A4A1EFD00EE7C86 /* LaunchScreen.xib */; };
 		2DF807391A4A1EFD00EE7C86 /* FoodTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DF807381A4A1EFD00EE7C86 /* FoodTrackerTests.swift */; };
+		2DF807431A4A1FD400EE7C86 /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DF807421A4A1FD400EE7C86 /* DetailVC.swift */; };
+		2DF807471A4A493800EE7C86 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DF807461A4A493800EE7C86 /* DataController.swift */; };
+		2DF807491A4B3BA000EE7C86 /* USDAItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DF807481A4B3BA000EE7C86 /* USDAItem.swift */; };
+		2DF8074B1A4DF21600EE7C86 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DF8074A1A4DF21600EE7C86 /* HealthKit.framework */; };
+		2DF8074E1A4DF27100EE7C86 /* HealthStoreConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DF8074D1A4DF27100EE7C86 /* HealthStoreConstant.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +43,12 @@
 		2DF807321A4A1EFD00EE7C86 /* FoodTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DF807371A4A1EFD00EE7C86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2DF807381A4A1EFD00EE7C86 /* FoodTrackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTrackerTests.swift; sourceTree = "<group>"; };
+		2DF807421A4A1FD400EE7C86 /* DetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
+		2DF807461A4A493800EE7C86 /* DataController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		2DF807481A4B3BA000EE7C86 /* USDAItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = USDAItem.swift; sourceTree = "<group>"; };
+		2DF8074A1A4DF21600EE7C86 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		2DF8074C1A4DF21600EE7C86 /* FoodTracker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = FoodTracker.entitlements; sourceTree = "<group>"; };
+		2DF8074D1A4DF27100EE7C86 /* HealthStoreConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthStoreConstant.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2DF8074B1A4DF21600EE7C86 /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +73,7 @@
 		2DF807111A4A1EFD00EE7C86 = {
 			isa = PBXGroup;
 			children = (
+				2DF8074A1A4DF21600EE7C86 /* HealthKit.framework */,
 				2DF8071C1A4A1EFD00EE7C86 /* FoodTracker */,
 				2DF807351A4A1EFD00EE7C86 /* FoodTrackerTests */,
 				2DF8071B1A4A1EFD00EE7C86 /* Products */,
@@ -79,12 +92,17 @@
 		2DF8071C1A4A1EFD00EE7C86 /* FoodTracker */ = {
 			isa = PBXGroup;
 			children = (
+				2DF8074C1A4DF21600EE7C86 /* FoodTracker.entitlements */,
 				2DF8071F1A4A1EFD00EE7C86 /* AppDelegate.swift */,
 				2DF807241A4A1EFD00EE7C86 /* ViewController.swift */,
+				2DF807461A4A493800EE7C86 /* DataController.swift */,
+				2DF807421A4A1FD400EE7C86 /* DetailVC.swift */,
+				2DF8074D1A4DF27100EE7C86 /* HealthStoreConstant.swift */,
 				2DF807261A4A1EFD00EE7C86 /* Main.storyboard */,
 				2DF807291A4A1EFD00EE7C86 /* Images.xcassets */,
 				2DF8072B1A4A1EFD00EE7C86 /* LaunchScreen.xib */,
 				2DF807211A4A1EFD00EE7C86 /* FoodTracker.xcdatamodeld */,
+				2DF807481A4B3BA000EE7C86 /* USDAItem.swift */,
 				2DF8071D1A4A1EFD00EE7C86 /* Supporting Files */,
 			);
 			path = FoodTracker;
@@ -164,6 +182,12 @@
 				TargetAttributes = {
 					2DF807191A4A1EFD00EE7C86 = {
 						CreatedOnToolsVersion = 6.1;
+						DevelopmentTeam = 2VLKX39E5H;
+						SystemCapabilities = {
+							com.apple.HealthKit = {
+								enabled = 1;
+							};
+						};
 					};
 					2DF807311A4A1EFD00EE7C86 = {
 						CreatedOnToolsVersion = 6.1;
@@ -215,9 +239,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2DF807471A4A493800EE7C86 /* DataController.swift in Sources */,
 				2DF807251A4A1EFD00EE7C86 /* ViewController.swift in Sources */,
+				2DF807431A4A1FD400EE7C86 /* DetailVC.swift in Sources */,
+				2DF807491A4B3BA000EE7C86 /* USDAItem.swift in Sources */,
 				2DF807231A4A1EFD00EE7C86 /* FoodTracker.xcdatamodeld in Sources */,
 				2DF807201A4A1EFD00EE7C86 /* AppDelegate.swift in Sources */,
+				2DF8074E1A4DF27100EE7C86 /* HealthStoreConstant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,9 +370,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = FoodTracker/FoodTracker.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = FoodTracker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -352,9 +384,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = FoodTracker/FoodTracker.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = FoodTracker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
